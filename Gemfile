@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
+
 gem 'rails', '6.0.3'
 gem 'bcrypt',       '3.1.13'
 gem 'puma', '~> 4.1'
@@ -15,9 +16,9 @@ gem 'mini_magick'
 gem 'rails-i18n'
 gem 'bootstrap-sass', '3.3.7'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'mysql2', '>= 0.4.4'
 
 group :development, :test do
-  gem 'mysql2', '>= 0.4.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'faker', git: 'https://github.com/stympy/faker.git', branch: 'master'
   gem 'forgery_ja'
